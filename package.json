@@ -1,0 +1,27 @@
+{
+  "name": "@chusky/livekit-agent",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts dev",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js start",
+    "test": "tsx --test src/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@livekit/agents": "1.9.3",
+    "@livekit/agents-plugin-silero": "1.9.3",
+    "dotenv": "^16.4.7",
+    "livekit-server-sdk": "2.19.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
